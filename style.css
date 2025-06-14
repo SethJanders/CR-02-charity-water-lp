@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: 'Avenir', 'Georgia', 'Times New Roman', serif;
+  background: #f5f6fa;
+  color: #222;
+}
+
+header {
+  background-color: #1e2a44;
+  padding: 1.25rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo img {
+  height: 54px;
+}
+
+.brand-text {
+  font-family: Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 500;
+  color: #ffc907;
+  text-transform: lowercase;
+  letter-spacing: 0;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.brand-text .highlight {
+  font-weight: 500;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 8%;
+  gap: 4rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 540px;
+}
+
+.hero-text h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 1.05;
+  color: #1e2a44;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+}
+
+.hero-text .emphasis {
+  font-weight: 700;
+}
+
+.hero-text p {
+  font-size: 1.15rem;
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.cta-bar {
+  display: inline-flex;
+  align-items: center;
+  background-color: #1e2a44;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  gap: 1rem;
+}
+
+.cta-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.donate {
+  font-size: 1rem;
+  padding: 0.6rem 1.25rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #ffc907;
+  color: #1e2a44;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.donate:hover {
+  background-color: #e6b800;
+}
+
+.hero-img {
+  flex: 1;
+  min-width: 300px;
+  max-width: 520px;
+}
+
+.hero-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Diagonal navy shape in bottom right */
+body::after {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 250px;
+  background-color: #1e2a44;
+  clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+  z-index: 0;
+}
